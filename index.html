@@ -2,11 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Climbing Form</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js">
-
     </script>
     <script src="main.js"></script>
 
@@ -14,31 +16,32 @@
 
   </head>
   <body>
-    <form id="climberInfo" name="climberInfo" action="index.html" method="get">
+    <h1>Beta</h1>
+    <form class="form-inline" id=climberInfo>
       <div class="fname">
-        <input type="text" name="firstName" value="" placeholder="First Name">
+        <input type="text" class="form-control" name="firstName" value="" placeholder="First Name">
       </div>
       <div class="lname">
-        <input type="text" name="lastName" value="" placeholder="Last Name">
+        <input type="text" class="form-control" name="lastName" value="" placeholder="Last Name">
       </div>
       <div class="age">
-        <input type="number" name="age" value="" placeholder="Age">
+        <input type="number" class="form-control" name="age" value="" placeholder="Age">
       </div>
-      <div class="lead">
+      <!-- <div class="lead">
         <input type="number" name="leadingGrade" value="" placeholder="Lead Climbing Grade">
       </div>
       <div class="boulder">
         <input type="number" name="boulderingGrade" value="" placeholder="Bourlering Grade">
-      </div>
+      </div> -->
       <div class="phone">
-        <input type="number" name="phoneNumber" value="" placeholder="Phone Number">
+        <input type="tel" class="form-control" name="phoneNumber" value="" placeholder="Phone Number">
       </div>
-      <div class="availability">
+      <!-- <div class="availability">
         <input type="date" name="days" value="" placeholder="Days">
         <input type="time" name="time" value="" placeholder="Times">
-      </div>
+      </div> -->
       <div class="email">
-        <input type="email" name="email" value="" placeholder="Email">
+        <input type="email" class="form-control" name="email" value="" placeholder="Email">
       </div>
       <div class="submit">
         <button class="button" name="submit">SUBMIT</button>
