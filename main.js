@@ -11,17 +11,6 @@ $.validator.addMethod(
   'Please enter a 10 digit number'
 );
 
-// $.validator.addMethod('ageSelector', function() {
-//   var $select = $('.1-100');
-//   for (i = 1; i <= 100; i++) {
-//     $select.append(
-//       $('<option></option>')
-//         .val(i)
-//         .html(i)
-//     );
-//   }
-// });
-
 $(function() {
   $('#climberInfo').validate({
     rules: {
