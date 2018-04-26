@@ -77,42 +77,47 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 
       </div>
-      <form class="climberInfo" id="climberInfo" name="climberInfo" action="index.html" method="get">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <form class="climberInfo" id="climberInfo" name="climberInfo" action="index.html" method="get">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" value="" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" value="" placeholder="Last Name">
+              </div>
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" class="form-control" id="age" value="" placeholder="Age">
+              </div>
+              <!-- <div class="lead">
+              <input type="number" name="leadingGrade" value="" placeholder="Lead Climbing Grade">
+            </div>
+            <div class="boulder">
+            <input type="number" name="boulderingGrade" value="" placeholder="Bourlering Grade">
+          </div> -->
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" class="form-control" id="phoneNumber" value="" placeholder="Phone Number">
+          </div>
+          <!-- <div class="availability">
+          <input type="date" name="days" value="" placeholder="Days">
+          <input type="time" name="time" value="" placeholder="Times">
+        </div> -->
         <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input type="text" class="form-control" id="firstName" value="" placeholder="First Name">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" value="" placeholder="Email">
         </div>
-        <div class="form-group">
-          <label for="lastName">Last Name</label>
-          <input type="text" class="form-control" id="lastName" value="" placeholder="Last Name">
+        <div class="submit">
+          <button type="button" class="btn btn-success" name="submit">SUBMIT</button>
         </div>
-        <div class="form-group">
-          <label for="age">Age</label>
-          <input type="number" class="form-control" id="age" value="" placeholder="Age">
+      </form>
+          </div>
         </div>
-        <!-- <div class="lead">
-        <input type="number" name="leadingGrade" value="" placeholder="Lead Climbing Grade">
       </div>
-      <div class="boulder">
-      <input type="number" name="boulderingGrade" value="" placeholder="Bourlering Grade">
-    </div> -->
-    <div class="form-group">
-      <label for="phoneNumber">Phone Number</label>
-      <input type="tel" class="form-control" id="phoneNumber" value="" placeholder="Phone Number">
     </div>
-    <!-- <div class="availability">
-    <input type="date" name="days" value="" placeholder="Days">
-    <input type="time" name="time" value="" placeholder="Times">
-  </div> -->
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" class="form-control" id="email" value="" placeholder="Email">
-  </div>
-  <div class="submit">
-    <button type="button" class="btn btn-success" name="submit">SUBMIT</button>
-  </div>
-</form>
-    </div>
-
   </body>
 </html>
