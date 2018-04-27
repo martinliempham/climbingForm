@@ -7,6 +7,18 @@ body {
 h1 {
   color: white;
 }
-p {
-  color: white;
+h2 {
+  color: black;
+}
+
+.climberInfo {
+  background-color: pink;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#locationList {
+  font-size: 30px;
+  font: 'Roboto', Helvetica, Arial;
+  background-color: green;
 }

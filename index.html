@@ -73,25 +73,25 @@
     <div class="container">
     <div class="jumbotron">
         <h1 style="color:white">BETA</h1>
-        <p>Tied in with no one on the other end?  Find a climbing partner!!!</p>
+        <h2>Tied in with no one on the other end?  <br>Find a climbing partner!!!</h2>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <form class="climberInfo" id="climberInfo" name="climberInfo" action="index.html" method="get">
               <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" value="" placeholder="First Name">
+                <input type="text" class="form-control" id="firstName" value="" placeholder="First Name" name="firstName">
               </div>
               <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" id="lastName" value="" placeholder="Last Name">
+                <input type="text" class="form-control" id="lastName" value="" placeholder="Last Name" name="lastName">
               </div>
               <div class="form-group">
                 <label for="age">Age</label>
-                <input type="number" class="form-control" id="age" value="" placeholder="Age">
+                <input type="number" class="form-control" id="age" value="" placeholder="Age" name="age">
               </div>
               <!-- <div class="lead">
               <input type="number" name="leadingGrade" value="" placeholder="Lead Climbing Grade">
@@ -101,7 +101,7 @@
           </div> -->
           <div class="form-group">
             <label for="phoneNumber">Phone Number</label>
-            <input type="tel" class="form-control" id="phoneNumber" value="" placeholder="Phone Number">
+            <input type="phoneUS" class="form-control" id="phoneNumber" value="" placeholder="Phone Number" name="phoneNumber">
           </div>
           <!-- <div class="availability">
           <input type="date" name="days" value="" placeholder="Days">
@@ -109,15 +109,23 @@
         </div> -->
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" value="" placeholder="Email">
+          <input type="email" class="form-control" id="email" value="" placeholder="Email" name="email">
         </div>
         <div class="submit">
-          <button type="button" class="btn btn-success" name="submit">SUBMIT</button>
+          <button type="submit" class="btn btn-success" name="submit" value="submit">SUBMIT</button>
         </div>
       </form>
+        </div>
+          <div class="col-lg-6">
+            <p>Choose Your Gym</p>
+            <ul class="list-unstyled" id="locationList">
+              <li>Hoboken</li>
+              <li>Chattam</li>
+              <li>Upper Saddle River</li>
+            </ul>
           </div>
         </div>
-      </div>
+        </div>
     </div>
   </body>
 </html>
