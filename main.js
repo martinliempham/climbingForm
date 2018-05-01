@@ -12,14 +12,16 @@ $document.ready(function() {
     'Please enter a 10 digit number'
   );
 
-  $('.list-unstyled > li').click(function() {
-    $('.list-unstyled > li')
-      .find('input[type="radio"]')
-      .removeAttr('checked');
-    $(this)
-      .find('input[type="radio"]')
-      .attr('checked', 'checked');
-  });
+  // radio button for choosing locationList
+
+  // $('.list-unstyled > li').click(function() {
+  //   $('.list-unstyled > li')
+  //     .find('input[type="radio"]')
+  //     .removeAttr('checked');
+  //   $(this)
+  //     .find('input[type="radio"]')
+  //     .attr('checked', 'checked');
+  // });
 
   $(function() {
     $("form[name='climberInfo']").validate({
