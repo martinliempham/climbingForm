@@ -12,12 +12,10 @@
     </script>
     <script src="main.js"></script>
 
-
-
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -77,61 +75,87 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <form class="climberInfo" id="climberInfo" name="climberInfo" action="index.html" method="get">
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" value="" placeholder="First Name" name="firstName">
+      <!-- container for locations -->
+            <div class="container">
+              <div class="locationList">
+                <p class="">Choose Your Gym</p>
+              <div class="row">
+                  <ul class="list-unstyled" id="locationList">
+                    <li class="col-lg-4">
+                      <button type="button" class="btn btn-primary btn-sm active">Hoboken</button>
+                    </li>
+                    <li class="col-lg-4">
+                      <button type="button" class="btn btn-primary btn-sm active">Chattam</button>
+                    </li>
+                    <li class="col-lg-4">
+                      <button type="button" class="btn btn-primary btn-sm active">Upper Saddle River</button>
+                    </li>
+                    <li class="col-lg-4">
+                      <button type="button" class="btn btn-primary btn-sm active">Middletown</button>
+                    </li>
+                    <li class="col-lg-4">
+                      <button type="button" class="btn btn-primary btn-sm active">Flemington</button>
+                    </li>
+                    <li class="col-lg-4">
+                      <button type="button" class="btn btn-primary btn-sm active">Melville</button>
+                    </li>
+                    <li class="col-lg-4">
+                      <button type="button" class="btn btn-primary btn-sm active">Poughkeepsie</button>
+                    </li>
+                    <li class="col-lg-4">
+                      <button type="button" class="btn btn-primary btn-sm active">Philadelphia</button>
+                    </li>
+                    <li class="col-lg-4">
+                      <button type="button" class="btn btn-primary btn-sm active">Radnor</button>
+                    </li>
+                  </ul>
+                </div>
+
               </div>
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" id="lastName" value="" placeholder="Last Name" name="lastName">
-              </div>
-              <div class="form-group">
-                <label for="age">Age</label>
-                <input type="number" class="form-control" id="age" value="" placeholder="Age" name="age">
-              </div>
-              <!-- <div class="lead">
-              <input type="number" name="leadingGrade" value="" placeholder="Lead Climbing Grade">
+
+              <!-- container for form -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <form class="climberInfo" id="climberInfo" name="climberInfo" action="index.html" method="get">
+                      <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" value="" placeholder="First Name" name="firstName">
+                      </div>
+                      <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" value="" placeholder="Last Name" name="lastName">
+                      </div>
+                      <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" value="" placeholder="Age" name="age">
+                      </div>
+                      <!-- <div class="lead">
+                      <input type="number" name="leadingGrade" value="" placeholder="Lead Climbing Grade">
+                    </div>
+                    <div class="boulder">
+                    <input type="number" name="boulderingGrade" value="" placeholder="Bourlering Grade">
+                  </div> -->
+                  <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="phoneUS" class="form-control" id="phoneNumber" value="" placeholder="Phone Number" name="phoneNumber">
+                  </div>
+                  <!-- <div class="availability">
+                  <input type="date" name="days" value="" placeholder="Days">
+                  <input type="time" name="time" value="" placeholder="Times">
+                </div> -->
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" value="" placeholder="Email" name="email">
+                </div>
+                <div class="submit">
+                  <button type="submit" class="btn btn-success" name="submit" value="submit">SUBMIT</button>
+                </div>
+              </form>
             </div>
-            <div class="boulder">
-            <input type="number" name="boulderingGrade" value="" placeholder="Bourlering Grade">
-          </div> -->
-          <div class="form-group">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="phoneUS" class="form-control" id="phoneNumber" value="" placeholder="Phone Number" name="phoneNumber">
-          </div>
-          <!-- <div class="availability">
-          <input type="date" name="days" value="" placeholder="Days">
-          <input type="time" name="time" value="" placeholder="Times">
-        </div> -->
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" value="" placeholder="Email" name="email">
-        </div>
-        <div class="submit">
-          <button type="submit" class="btn btn-success" name="submit" value="submit">SUBMIT</button>
-        </div>
-      </form>
-        </div>
-          <div class="col-lg-6">
-            <p>Choose Your Gym</p>
-            <ul class="list-unstyled" id="locationList">
-              <li>Hoboken</li>
-              <li>Chattam</li>
-              <li>Upper Saddle River</li>
-              <li>Middletown</li>
-              <li>Flemington</li>
-              <li>Melville</li>
-              <li>Poughkeepsie</li>
-              <li>Philadeliphia</li>
-              <li>Radnor</li>
-            </ul>
           </div>
         </div>
-        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,5 +1,6 @@
 body {
   background-color: #6b7fa0;
+  padding-top: 70px;
 }
 .jumbotron {
   background-image: url('walltopia2.jpg');
@@ -12,13 +13,14 @@ h2 {
 }
 
 .climberInfo {
+  margin-top: 20px;
   background-color: pink;
   border: 2px solid black;
   border-radius: 15px;
 }
 
-#locationList {
+.locationList {
   font-size: 30px;
   font: 'Roboto', Helvetica, Arial;
-  background-color: green;
+  background-color: white;
 }
