@@ -7,13 +7,84 @@
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="style.css">
+
+
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+  apiKey: 'AIzaSyD_GSb5o-1iMW5xyhiTBUyl0tUlha03oP8',
+  authDomain: 'climbingform.firebaseapp.com',
+  databaseURL: 'https://climbingform.firebaseio.com',
+  projectId: 'climbingform',
+  storageBucket: '',
+  messagingSenderId: '859074837460'
+};
+firebase.initializeApp(config);
+</script>
+
+<!-- firebase authenication -->
+<script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+
+<!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js">
     </script>
     <script src="main.js"></script>
-
   </head>
-  <body>
+
+<body>
+  <!-- fb sdk -->
+<script>
+$(document).ready(function() {
+  $.ajaxSetup({ cache: true });
+  $.getScript('https://connect.facebook.net/en_US/sdk.js', function() {
+    FB.init({
+      appId: '{222922338473026}',
+      version: 'v2.7' // or v2.1, v2.2, v2.3, ...
+    });
+    $('#loginbutton,#feedbutton').removeAttr('disabled');
+    FB.getLoginStatus(updateStatusCallback);
+  });
+});
+</script>
+
+
+  <!-- facebook authenication   -->
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId: '{222922338473026}',
+    cookie: true,
+    xfbml: true,
+    version: '{v2.7}'
+  });
+
+  FB.AppEvents.logPageView();
+};
+
+(function(d, s, id) {
+  var js,
+    fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {
+    return;
+  }
+  js = d.createElement(s);
+  js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js';
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, 'script', 'facebook-jssdk');
+</script>
+
+<!-- fb login button -->
+
+
+<!-- button styles -->
+<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
+
+
+<!-- navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
