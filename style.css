@@ -20,7 +20,8 @@ h2 {
 }
 
 .locationList {
+  text-align: center;
   font-size: 30px;
   font: 'Roboto', Helvetica, Arial;
-  background-color: white;
+  /* background-color: white; */
 }
