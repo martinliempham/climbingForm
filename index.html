@@ -22,6 +22,18 @@ var config = {
 };
 firebase.initializeApp(config);
 </script>
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+
+<!-- Add additional services you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-functions.js"></script>
+
+<!-- Comment out (or don't include) services you don't want to use -->
+<!-- <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-storage.js"></script> -->
 
 <!-- firebase authenication -->
 <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
@@ -36,19 +48,6 @@ firebase.initializeApp(config);
 
 <body>
   <!-- fb sdk -->
-<script>
-$(document).ready(function() {
-  $.ajaxSetup({ cache: true });
-  $.getScript('https://connect.facebook.net/en_US/sdk.js', function() {
-    FB.init({
-      appId: '{222922338473026}',
-      version: 'v2.7' // or v2.1, v2.2, v2.3, ...
-    });
-    $('#loginbutton,#feedbutton').removeAttr('disabled');
-    FB.getLoginStatus(updateStatusCallback);
-  });
-});
-</script>
 
 
   <!-- facebook authenication   -->
@@ -58,7 +57,7 @@ window.fbAsyncInit = function() {
     appId: '{222922338473026}',
     cookie: true,
     xfbml: true,
-    version: '{v2.7}'
+    version: '{v3.0}'
   });
 
   FB.AppEvents.logPageView();
@@ -72,7 +71,8 @@ window.fbAsyncInit = function() {
   }
   js = d.createElement(s);
   js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js';
+  js.src =
+    'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=222922338473026';
   fjs.parentNode.insertBefore(js, fjs);
 })(document, 'script', 'facebook-jssdk');
 </script>
@@ -80,8 +80,9 @@ window.fbAsyncInit = function() {
 <!-- fb login button -->
 
 
-<!-- button styles -->
-<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
+<!-- FB button styles -->
+
+<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true">LOGIN</div>
 
 
 <!-- navbar -->

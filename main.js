@@ -1,25 +1,43 @@
-import * as firebase from 'firebase';
-// // Firebase App is always required and must be first
-// var firebase = require('firebase/app');
+var provider = new firebase.auth.FacebookAuthProvider();
+
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+    {
+      status: 'connected',
+      authResponse: {
+        accessToken: '...',
+        expiresIn:'...',
+        signedRequest:'...',
+        userID:'...'
+      }
+    }
+});
+
+
+
+//import firebase from 'firebase';
 // var firebase = require('firebase');
-//
-// // Add additional services you want to use
-// require('firebase/auth');
-// require('firebase/database');
-// require('firebase/firestore');
-// require('firebase/messaging');
-// require('firebase/functions');
-//
-// // var firebase = require('firebase');
-// var firebaseui = require('firebaseui');
-//
-// // Comment out (or don't require) services you don't want to use
-// // require("firebase/storage");
-//
-// var config = {
-//   // ...
-// };
-// firebase.initializeApp(config);
+
+// Firebase App is always required and must be first
+//var firebase = require('firebase/app');
+
+// Add additional services you want to use
+//require('firebase/auth');
+//require('firebase/database');
+//require('firebase/firestore');
+//require('firebase/messaging');
+//require('firebase/functions');
+
+//var firebase = require('firebase');
+//var firebaseui = require('firebaseui');
+
+// Comment out (or don't require) services you don't want to use
+// require("firebase/storage");
+
+//var config = {
+// ...
+//};
+//firebase.initializeApp(config);
 
 // jQuery validation code
 
